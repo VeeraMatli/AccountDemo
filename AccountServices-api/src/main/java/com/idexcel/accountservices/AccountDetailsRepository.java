@@ -1,11 +1,10 @@
-package com.idexcel.accountservices.Model;
+package com.idexcel.accountservices;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.idexcel.accountservices.Beans.AccountDetails;
-
 public interface AccountDetailsRepository  extends MongoRepository<AccountDetails, String>{
 	
-	
+	AccountDetails findByUserName(String userName);
+	AccountDetails findByPassword(String password);
 
 }

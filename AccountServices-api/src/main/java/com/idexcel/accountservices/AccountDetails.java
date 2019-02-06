@@ -1,9 +1,9 @@
-package com.idexcel.accountservices.Beans;
+package com.idexcel.accountservices;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document(collection = "AccountDetails")
 public class AccountDetails {
 
 	@Id
@@ -99,6 +99,10 @@ public class AccountDetails {
 	 */
 	public void setRole(String role) {
 		this.role = role;
+	}
+	
+	public String toString() {
+		return "AccountDetails [id =" + id + ", UserName =" + userName + ", email =" + email +", Role ="+ role +"]";
 	}
 
 }
