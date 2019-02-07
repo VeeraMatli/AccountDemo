@@ -1,13 +1,13 @@
-package com.idexcel.accountservices;
+package com.idexcel.accountservices.AccountServicesapi;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "AccountDetails")
+@Document(collection="AccountDetails")
 public class AccountDetails {
 
 	@Id
-	private int id;
+	private String accountId;
 
 	private String firstName;
 	private String lastName;
@@ -16,17 +16,33 @@ public class AccountDetails {
 	private String password;
 	private String role;
 	
+	
+	public AccountDetails() {
+		
+	}
+	
+	public AccountDetails(String accountId, String firstName, String lastName,
+			String email, String userName, String password, String role) {
+		this.accountId = accountId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this. userName = userName;
+		this.password =password;
+		this.role=role;
+	}
+	
 	/**
-	 * @return the id
+	 * @return the accountId
 	 */
-	public int getId() {
-		return id;
+	public String getAccountId() {
+		return accountId;
 	}
 	/**
-	 * @param id the id to set
+	 * @param accountId the accountId to set
 	 */
-	public void setId(int id) {
-		this.id = id;
+	public void setAccountId(String accountId) {
+		this.accountId = accountId;
 	}
 	/**
 	 * @return the firstName
@@ -102,7 +118,7 @@ public class AccountDetails {
 	}
 	
 	public String toString() {
-		return "AccountDetails [id =" + id + ", UserName =" + userName + ", email =" + email +", Role ="+ role +"]";
+		return "AccountDetails [id =" + accountId + ", UserName =" + userName + ", email =" + email +", Role ="+ role +"]";
 	}
 
 }

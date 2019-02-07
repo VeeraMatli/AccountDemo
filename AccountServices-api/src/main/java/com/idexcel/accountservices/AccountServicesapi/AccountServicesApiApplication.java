@@ -10,6 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 public class AccountServicesApiApplication {
 
+
 	public static void main(String[] args) {
 		SpringApplication.run(AccountServicesApiApplication.class, args);
 	}
