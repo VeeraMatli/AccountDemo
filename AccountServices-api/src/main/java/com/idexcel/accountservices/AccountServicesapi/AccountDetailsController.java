@@ -3,7 +3,10 @@ package com.idexcel.accountservices.AccountServicesapi;
 import java.util.Date;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.jsonwebtoken.Jwt;
+import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
@@ -30,6 +35,13 @@ public class AccountDetailsController {
 		if (accountDetails != null) {
 			jwtToken = Jwts.builder().setSubject(userName).claim("roles", "user").setIssuedAt(new Date())
 					.signWith(SignatureAlgorithm.HS256, "secretkey").compact();
+			
+			/** Parsing token and reading it.*/
+			JwtParser parsedJwt = Jwts.parser().setSigningKey("secretkey");
+			System.out.println(parsedJwt);
+			Jwt finalToken = parsedJwt.parse(jwtToken);
+			System.out.println("finaltoken body----"+finalToken.getBody().toString());
+			/** This is end of parsing. */ 
 		}
 		System.out.println("jwtToken -- " + jwtToken);
 		return jwtToken;
@@ -41,12 +53,13 @@ public class AccountDetailsController {
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/Accounts")
-	public ResponseEntity<List<AccountDetails>> getAllAccountDetails() {
+	public ResponseEntity<List<AccountDetails>> getAllAccountDetails(HttpServletResponse response) {
 		List<AccountDetails> detailsList =accountDetailsService.getAllAccountDetails();
 		if(detailsList == null) {
 			return new ResponseEntity(HttpStatus.NO_CONTENT);
 		}
-		return new ResponseEntity<List<AccountDetails>>(detailsList, HttpStatus.OK);
+		HttpHeaders header = new HttpHeaders();
+		return new ResponseEntity<List<AccountDetails>>(detailsList,header, HttpStatus.OK);
 	}
 	
 	@RequestMapping(value = "/Accounts/add", method = RequestMethod.POST)
