@@ -10,8 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,28 +32,20 @@ public class AccountDetailsController {
 	@Autowired
 	public AccountDetailsService accountDetailsService;
 
+	public String jwtToken;
+	
 	@RequestMapping(path = "/login/{userName}/{password}", method = RequestMethod.GET)
 	@ResponseBody
 	public ResponseEntity<?> checkLogin(@PathVariable String userName, @PathVariable String password) {
-		String jwtToken = "";
+		HttpHeaders headers = new HttpHeaders();
 		System.out.println("Username -- " + userName + " password -- " + password);
 		AccountDetails accountDetails = accountDetailsService.checkLogin(userName, password);
 
 		if (accountDetails != null) {
-			jwtToken = Jwts.builder().setSubject(userName).claim("roles", "user").setIssuedAt(new Date())
-					.signWith(SignatureAlgorithm.HS256, "9642").compact();
-
-			/** Parsing token and reading it. */
-			JwtParser parsedJwt = Jwts.parser().setSigningKey("secretkey");
-			System.out.println(parsedJwt);
-			Jwt finalToken = parsedJwt.parse(jwtToken);
-			System.out.println("finaltoken body----" + finalToken.getBody().toString());
-			/** This is end of parsing. done changing */
+			jwtToken = generateJWTToken(userName);
+			headers.add("jwtToken", jwtToken);
+			System.out.println("jwtToken -- " + jwtToken);
 		}
-		HttpHeaders headers = new HttpHeaders();
-		headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
-		headers.add("jwtToken", jwtToken);
-		System.out.println("jwtToken -- " + jwtToken);
 		return new ResponseEntity<>("User Logged In Successfully", headers, HttpStatus.OK);
 	}
 
@@ -67,6 +61,7 @@ public class AccountDetailsController {
 			return new ResponseEntity(HttpStatus.NO_CONTENT);
 		}
 		HttpHeaders header = new HttpHeaders();
+		header.add("jwtToken", jwtToken);
 		return new ResponseEntity<List<AccountDetails>>(detailsList, header, HttpStatus.OK);
 	}
 
@@ -74,6 +69,7 @@ public class AccountDetailsController {
 	@ResponseBody
 	public ResponseEntity<?> addDetails(@RequestBody AccountDetails details) {
 		Map<String, Object> json = new HashMap<String, Object>();
+		jwtToken = generateJWTToken(details.getUserName());
 		AccountDetails accountDetails = new AccountDetails();
 		try {
 			accountDetails = accountDetailsService.save(details);
@@ -94,9 +90,14 @@ public class AccountDetailsController {
 
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/Accounts/{userName}")
-	public AccountDetails getAccountDetails(@PathVariable String userName) {
-		return accountDetailsService.getAccountDetails(userName);
+	@RequestMapping(method = RequestMethod.GET, value = "/Account/{userName}",produces = {MediaType.APPLICATION_JSON_VALUE})
+	@ResponseBody
+	@PostMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<AccountDetails> getAccountDetails(@PathVariable String userName) {
+		AccountDetails accountDetails = accountDetailsService.getAccountDetails(userName);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("Content-Type", "application/json; charset=utf-8");
+		return new ResponseEntity<>(accountDetails,headers, HttpStatus.OK);
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, value = "/Accounts/{userName}")
@@ -117,4 +118,10 @@ public class AccountDetailsController {
 		return details.getAccountId();
 	}
 
+	
+	private String generateJWTToken(String userName) {
+		jwtToken = Jwts.builder().setSubject(userName).claim("roles", "user").setIssuedAt(new Date())
+				.signWith(SignatureAlgorithm.HS256, "9642").compact();
+		return jwtToken;
+	}
 }
