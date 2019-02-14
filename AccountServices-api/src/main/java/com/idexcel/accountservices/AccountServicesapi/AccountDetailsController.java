@@ -18,11 +18,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.jsonwebtoken.Jwt;
-import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
@@ -40,7 +37,8 @@ public class AccountDetailsController {
 		HttpHeaders headers = new HttpHeaders();
 		System.out.println("Username -- " + userName + " password -- " + password);
 		AccountDetails accountDetails = accountDetailsService.checkLogin(userName, password);
-
+		
+		
 		if (accountDetails != null) {
 			jwtToken = generateJWTToken(userName);
 			headers.add("jwtToken", jwtToken);
@@ -49,10 +47,6 @@ public class AccountDetailsController {
 		return new ResponseEntity<>("User Logged In Successfully", headers, HttpStatus.OK);
 	}
 
-	@RequestMapping(path = "/logout", method = RequestMethod.GET)
-	public void logout() {
-
-	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/Accounts")
 	public ResponseEntity<List<AccountDetails>> getAllAccountDetails(HttpServletResponse response) {

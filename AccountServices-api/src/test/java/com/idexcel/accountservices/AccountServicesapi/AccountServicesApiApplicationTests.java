@@ -35,7 +35,7 @@ public class AccountServicesApiApplicationTests {
 	private AccountDetailsRepository accountDetialsRepo;
 
 	@Before
-	public void init() throws Exception {
+	public void init() {
 		MockitoAnnotations.initMocks(this);
 
 	}
