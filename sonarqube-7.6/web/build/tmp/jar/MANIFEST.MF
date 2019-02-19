@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Build: d56689a5eb122c06cf87375828085609f5a68323
+Build-Time: 2019-01-22T09:16:48+0000
+Version: 7.6
+

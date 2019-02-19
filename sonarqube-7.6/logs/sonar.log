@@ -1,0 +1,301 @@
+2019.02.12 10:09:45 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.12 10:09:45 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process1297539782361275592properties
+2019.02.12 10:10:29 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.12 10:10:29 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process4134874837772308834properties
+2019.02.12 10:10:45 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.12 10:10:45 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2019.02.12 11:09:40 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2019.02.12 11:09:45 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2019.02.12 11:09:49 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2019.02.12 11:09:49 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2019.02.12 11:09:49 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 11:31:23 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+2019.02.12 11:31:23 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.12 11:31:23 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\conf\es
+2019.02.12 11:31:23 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.12 11:31:23 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.12 11:31:23 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.12 11:32:14 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.12 11:32:14 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process8747563778803848723properties
+2019.02.12 11:32:58 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.12 11:32:58 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process5597873759931144906properties
+2019.02.12 11:33:26 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.12 11:33:26 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+CTRL-C trapped.  Forcing immediate shutdown.
+JVM did not exit on request, terminated
+CTRL-C trapped.  Forcing immediate shutdown.
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 13:08:47 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+
+WrapperSimpleApp: Encountered an error running main: java.nio.file.FileSystemException: C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\ce-exploded-plugins\csharp\sonar-csharp-plugin-7.10.0.7896.jar: The process cannot access the file because it is being used by another process.
+
+java.nio.file.FileSystemException: C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\ce-exploded-plugins\csharp\sonar-csharp-plugin-7.10.0.7896.jar: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(Unknown Source)
+	at java.nio.file.Files.delete(Unknown Source)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:181)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:143)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:55)
+	at org.sonar.application.App.main(App.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Unknown Source)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 13:10:53 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+
+WrapperSimpleApp: Encountered an error running main: java.nio.file.FileSystemException: C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\ce-exploded-plugins\csharp\sonar-csharp-plugin-7.10.0.7896.jar: The process cannot access the file because it is being used by another process.
+
+java.nio.file.FileSystemException: C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\ce-exploded-plugins\csharp\sonar-csharp-plugin-7.10.0.7896.jar: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(Unknown Source)
+	at java.nio.file.Files.delete(Unknown Source)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:181)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:143)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:55)
+	at org.sonar.application.App.main(App.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Unknown Source)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 13:11:48 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+
+WrapperSimpleApp: Encountered an error running main: java.nio.file.FileSystemException: C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\ce-exploded-plugins\csharp\sonar-csharp-plugin-7.10.0.7896.jar: The process cannot access the file because it is being used by another process.
+
+java.nio.file.FileSystemException: C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\ce-exploded-plugins\csharp\sonar-csharp-plugin-7.10.0.7896.jar: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(Unknown Source)
+	at java.nio.file.Files.delete(Unknown Source)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:181)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:143)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:55)
+	at org.sonar.application.App.main(App.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Unknown Source)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 13:12:45 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+2019.02.12 13:12:45 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.12 13:12:45 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\conf\es
+2019.02.12 13:12:45 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.12 13:12:46 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.12 13:12:46 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.12 13:13:01 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+Wrapper Process has not received any CPU time for 1594 seconds.  Extending timeouts.
+2019.02.12 13:13:01 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process2953119054743732340properties
+2019.02.12 13:13:26 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.12 13:13:26 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process3057139790493791430properties
+2019.02.12 13:13:40 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.12 13:13:40 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2019.02.12 13:46:33 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2019.02.12 13:46:35 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2019.02.12 13:46:38 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2019.02.12 13:46:38 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2019.02.12 13:46:38 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 13:49:09 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+2019.02.12 13:49:09 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.12 13:49:10 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\conf\es
+2019.02.12 13:49:10 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.12 13:49:11 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.12 13:49:11 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.12 13:49:29 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.12 13:49:29 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process6608591117790472084properties
+2019.02.12 13:50:03 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.12 13:50:03 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process6875831177153268912properties
+2019.02.12 13:50:26 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.12 13:50:26 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2019.02.12 15:41:03 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2019.02.12 15:41:09 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2019.02.12 15:41:15 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2019.02.12 15:41:15 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2019.02.12 15:41:15 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Startup failed: Timed out waiting for a signal from the JVM.
+JVM did not exit on request, terminated
+JVM Restarts disabled.  Shutting down.
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.12 16:02:49 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+Wrapper Process has not received any CPU time for 303 seconds.  Extending timeouts.
+2019.02.12 16:02:49 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.12 16:02:49 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\conf\es
+2019.02.12 16:02:49 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.12 16:02:49 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.12 16:02:49 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.12 16:04:14 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.12 16:04:14 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process5719012721452979267properties
+2019.02.12 16:04:52 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.12 16:04:52 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process8665915535619964772properties
+2019.02.12 16:05:20 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.12 16:05:20 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+CTRL-C trapped.  Forcing immediate shutdown.
+JVM did not exit on request, terminated
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Startup failed: Timed out waiting for a signal from the JVM.
+JVM did not exit on request, terminated
+JVM Restarts disabled.  Shutting down.
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.13 10:11:42 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+2019.02.13 10:11:42 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.13 10:11:42 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\conf\es
+2019.02.13 10:11:42 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.13 10:11:43 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.13 10:11:43 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.13 10:12:33 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.13 10:12:33 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process1054611988079533837properties
+2019.02.13 10:13:27 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.13 10:13:27 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process4248827430051499211properties
+2019.02.13 10:13:47 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.13 10:13:47 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2019.02.13 10:28:06 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2019.02.13 10:28:09 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2019.02.13 10:28:11 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2019.02.13 10:28:11 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2019.02.13 10:28:11 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.13 10:47:23 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\Downloads\sonarqube-7.6\temp
+2019.02.13 10:47:24 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.13 10:47:24 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\Downloads\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\conf\es
+2019.02.13 10:47:24 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.13 10:47:34 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.13 10:47:35 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.13 10:48:43 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.13 10:48:43 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process6493951744415446319properties
+2019.02.13 10:49:30 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.13 10:49:30 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\Downloads\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\Downloads\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\Downloads\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\Downloads\sonarqube-7.6\temp\sq-process2515905436089875538properties
+2019.02.13 10:50:08 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.13 10:50:08 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2019.02.13 12:10:49 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2019.02.13 12:10:55 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2019.02.13 12:11:03 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2019.02.13 12:11:03 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2019.02.13 12:11:03 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2019.02.13 12:13:40 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\AJReddy\git\files\sonarqube-7.6\temp
+2019.02.13 12:13:40 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2019.02.13 12:13:40 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\AJReddy\git\files\sonarqube-7.6\elasticsearch]: C:\Program Files\Java\jre1.8.0_112\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\AJReddy\git\files\sonarqube-7.6\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Users\AJReddy\git\files\sonarqube-7.6\temp\conf\es
+2019.02.13 12:13:41 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2019.02.13 12:13:42 INFO  app[][o.e.p.PluginsService] no modules loaded
+2019.02.13 12:13:42 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019.02.13 12:14:10 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2019.02.13 12:14:10 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\AJReddy\git\files\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\git\files\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\git\files\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Users\AJReddy\git\files\sonarqube-7.6\temp\sq-process630050778665854414properties
+2019.02.13 12:14:58 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2019.02.13 12:14:58 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\AJReddy\git\files\sonarqube-7.6]: C:\Program Files\Java\jre1.8.0_112\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\AJReddy\git\files\sonarqube-7.6\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;C:\Users\AJReddy\git\files\sonarqube-7.6\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Users\AJReddy\git\files\sonarqube-7.6\temp\sq-process4992016859446444746properties
+2019.02.13 12:15:19 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2019.02.13 12:15:19 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2019.02.13 16:17:08 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2019.02.13 16:17:14 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2019.02.13 16:17:23 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2019.02.13 16:17:23 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2019.02.13 16:17:23 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped

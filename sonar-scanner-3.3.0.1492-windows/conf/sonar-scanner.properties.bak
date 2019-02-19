@@ -1,0 +1,21 @@
+#Configure here general information about the environment, such as SonarQube server connection details for example
+#No information about specific project should appear here
+
+#----- Default SonarQube server
+#sonar.host.url=http://localhost:9000
+
+#----- Default source code encoding
+#sonar.sourceEncoding=UTF-8
+
+sonar.projectKey=JavaProject
+sonar.projectName=AccountServices-api
+sonar.projectVersion=1.0
+sonar.sources=C:/Users/AJReddy/git/files/AccountServices-api/src
+sonar.login=daa9c41128ada79c9d4ee675ff79a46a201cbb45
+sonar.scm.enabled=true
+sonar.scm.provider=git
+sonar.java.binaries=C:/Users/AJReddy/git/files/AccountServices-api/build/classes
+sonar.java.coveragePlugin=jacoco
+sonar.jacoco.reportPaths=build/jacoco.exec
+sonar.jacoco.itReportPath=build/jacoco-it.exec
+sonar.surefire.reportsPath=build/surefire-reports
