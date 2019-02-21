@@ -1,13 +1,13 @@
 pipeline {
    agent any
    stages {
-       stage ('Compile') {
+       stage ('Compile Stage') {
            steps {
                  sh './gradlew compile'
                }
            }
        }
-        stage ('Build') {
+        stage ('Build Stage') {
            steps {
                
                    sh './gradlew clean build'
