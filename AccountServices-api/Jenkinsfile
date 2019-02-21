@@ -1,17 +1,7 @@
-pipeline {
-   agent any
-   stages {
-       stage ('Compile') {
-           steps {
-                 sh './gradlew compile'
-               }
-           }
-       
-        stage ('Build') {
-           steps {
-               
-                   sh './gradlew clean build'
-               }
-           }
-		}
-   }
+ 
+ node {
+       stage('pulling code from git'){
+        checkout scm
+       }
+  
+}
